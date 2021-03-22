@@ -6,8 +6,8 @@ import MapGL, {
   GeolocateControl
 } from "react-map-gl";
 
-import Lokation from "./lokation-position";
-import LokationsInfo from "./lokation-information";
+import Lokation from "./components/lokation-position/lokation-position";
+import LokationsInfo from "./components/lokation-information/lokation-information";
 
 import PLACERINGER from "./placering.json";
 
