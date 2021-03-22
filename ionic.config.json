@@ -1,0 +1,7 @@
+{
+  "name": "urban",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
