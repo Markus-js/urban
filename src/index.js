@@ -9,7 +9,7 @@ import MapGL, {
 import Lokation from "./components/lokation-position/lokation-position";
 import LokationsInfo from "./components/lokation-information/lokation-information";
 
-import PLACERINGER from "./placering.json";
+import PLACERINGER from "./placering/placering.json";
 
 const TOKEN =
   "pk.eyJ1IjoibWFya3VzLWpzIiwiYSI6ImNrbWs0ZXR5ZzB4bGEydm5hbXdoN2RodmEifQ.5mEM5omxU7izIaFBIHpOlQ";
