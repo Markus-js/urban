@@ -19,7 +19,7 @@ const TOKEN =
     right: 10,
     top: 10
   };
-
+s
 
 class App extends Component {
   constructor(props) {
