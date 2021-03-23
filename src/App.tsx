@@ -23,7 +23,6 @@ import './theme/variables.css';
 import Home from './pages/Home/Home';
 import Tasks from './pages/Tasks/Tasks';
 import Account from './pages/Account/Account';
-import Login from './pages/LoginPage/Login';
 import {navigateCircleOutline, personCircleOutline, starOutline} from 'ionicons/icons';
 
 const App: React.FC = () => (
