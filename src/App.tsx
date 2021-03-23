@@ -1,7 +1,6 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
+import { IonApp, IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -21,23 +20,41 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Home from './pages/Home/Home';
+import Tasks from './pages/Tasks/Tasks';
+import Account from './pages/Account/Account';
+import {navigateCircleOutline, personCircleOutline, starOutline} from 'ionicons/icons';
 
-const App: React.FC = () => {
-
-  return (
-    <IonApp>
+const App: React.FC = () => (
+  <IonApp>
       <IonReactRouter>
-        <IonRouterOutlet>
-          <Route exact path="/home">
-            <Home />
-          </Route>
-          <Route exact path="/">
-            <Redirect to="/home" />
-          </Route>
-        </IonRouterOutlet>
+        <IonTabs>
+          <IonRouterOutlet>
+            <Route exact path="/tasks" component={Tasks}></Route>
+            <Route exact path="/home" component={Home}></Route>
+            <Route exact path="/account" component={Account}></Route>
+            <Route exact path="/"> <Redirect to="/home" /> </Route>
+          </IonRouterOutlet>
+
+          <IonTabBar slot="bottom">
+            <IonTabButton tab="tasks" href="/tasks">
+              <IonIcon icon={starOutline}></IonIcon>
+              <IonLabel>Tasks</IonLabel>
+            </IonTabButton>
+
+            <IonTabButton tab="home" href="/home">
+              <IonIcon icon={navigateCircleOutline}></IonIcon>
+              <IonLabel>Home</IonLabel>
+            </IonTabButton>
+
+            <IonTabButton tab="account" href="/account">
+              <IonIcon icon={personCircleOutline}></IonIcon>
+              <IonLabel>Account</IonLabel>
+            </IonTabButton>
+          </IonTabBar>
+        </IonTabs>
       </IonReactRouter>
-    </IonApp>
-  )
-};
+  </IonApp>
+);
 
 export default App;
