@@ -92,6 +92,7 @@ class App extends Component {
         {...viewport}
         width="100vw"
         height="100vh"
+        z-index="-1"
         mapStyle="mapbox://styles/mapbox/dark-v9"
         onViewportChange={this._updateViewport}
         mapboxApiAccessToken={TOKEN}
