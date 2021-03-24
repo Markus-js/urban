@@ -11,9 +11,6 @@ const Tasks: React.FC<any> = (props) => {
 
     return (
         <IonPage>
-            <IonHeader>
-                <IonToolbar></IonToolbar>
-            </IonHeader>
             <IonContent className="contentContainer" scrollEvents={true}>
 
                 {loadData && loadData.map((item, index) => {

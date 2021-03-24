@@ -11,13 +11,10 @@ const Home: React.FC<any> = (props) => {
 
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar></IonToolbar>
-      </IonHeader>
       <IonContent>
 
         {currentTask ?
-          <IonButton expand="full" fill="solid" color="warning" onClick={() => setShowModal(true)}>
+          <IonButton className="hintButton" expand="full" fill="solid" color="warning" onClick={() => setShowModal(true)}>
             <IonLabel>Se hints</IonLabel>
             <IonIcon icon={eyeOutline}></IonIcon>
           </IonButton> : null
@@ -27,7 +24,6 @@ const Home: React.FC<any> = (props) => {
       
       { currentTask &&
       <IonModal isOpen={showModal}>
-        <IonHeader><IonToolbar></IonToolbar></IonHeader>
         <IonContent className="modalContent">
           
           <IonButton expand="full" fill="solid" color="danger" onClick={() => setShowModal(false)}>
