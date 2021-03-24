@@ -1,11 +1,11 @@
 import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from "@ionic/react";
 import { useEffect } from "react";
-import jsonData from '../../jsonFiles/jsonFiles.json';
+import JsonData from '../../JsonFiles/JsonFiles.json';
 
 
 
 const Tasks: React.FC<any> = (props) => {
-    const loadData = jsonData;
+    const loadData = JsonData;
     const setCurrentTask = props.setCurrentTask;
 
     return (

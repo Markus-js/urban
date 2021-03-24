@@ -20,12 +20,12 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import Home from './pages/Home/Home';
-import Tasks from './pages/Tasks/Tasks';
-import Account from './pages/Account/Account';
+import Home from './Pages/Home/Home';
+import Tasks from './Pages/Tasks/Tasks';
+import Account from './Pages/Account/Account';
 import {navigateCircleOutline, personCircleOutline, starOutline} from 'ionicons/icons';
 import { useState } from 'react';
-import Login from './pages/Login/Login';
+import Login from './Pages/Login/Login';
 
 const App: React.FC<any> = () => {
   
