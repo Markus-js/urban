@@ -25,7 +25,7 @@ const Tasks: React.FC<any> = (props) => {
                             </IonCardHeader>
                             <IonCardContent>
                                 <p className="cardDecription">{item.categoryDecription}</p>
-                                <IonButton className="cardButton" expand="full" fill="solid" onClick={() => setCurrentTask(item.categoryTasks[Math.floor(Math.random() * Math.floor(item.categoryTasks.length))])}>Start eventyret</IonButton>
+                                <IonButton className="cardButton" routerLink="/home" expand="full" fill="solid" onClick={() => setCurrentTask(item.categoryTasks[Math.floor(Math.random() * Math.floor(item.categoryTasks.length))])}>Start eventyret</IonButton>
                             </IonCardContent>
                         </IonCard>
                     )
