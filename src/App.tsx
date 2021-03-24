@@ -20,6 +20,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './App.css';
 import Home from './Pages/Home/Home';
 import Tasks from './Pages/Tasks/Tasks';
 import Account from './Pages/Account/Account';
@@ -45,7 +46,7 @@ const App: React.FC<any> = () => {
               <Route exact path="/"> <Redirect to="/home" /> </Route>
             </IonRouterOutlet>
 
-            <IonTabBar slot="bottom">
+            <IonTabBar className="menuBar" slot="bottom">
               <IonTabButton tab="tasks" href="/tasks">
                 <IonIcon icon={starOutline}></IonIcon>
                 <IonLabel>Tasks</IonLabel>
