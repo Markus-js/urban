@@ -50,11 +50,6 @@ const Login: React.FC<any> = (props) => {
 
     return (
         <IonPage>
-            <IonHeader>
-                <IonToolbar>
-                    <IonTitle></IonTitle>
-                </IonToolbar>
-            </IonHeader>
             <IonContent className="loginContent">
                 <IonItem color="dark" className="inputField">
                     <IonLabel position="floating">Email</IonLabel>
@@ -72,12 +67,6 @@ const Login: React.FC<any> = (props) => {
 
             {/*dette er en modal hvor sign up oplysningerne er */}
             <IonModal isOpen={showModal}>
-                <IonHeader>
-                    <IonToolbar>
-                        <IonTitle></IonTitle>
-                    </IonToolbar>
-                </IonHeader>
-                
                 <IonContent className="signupContent">
                 <IonItem color="dark" className="inputField">
                     <IonLabel position="floating">Email</IonLabel>
