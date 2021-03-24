@@ -1,0 +1,146 @@
+[
+    {
+        "categoryName": "Kirker i Aalborg",
+        "categoryImg": "https://images.pexels.com/photos/3478/church-cathedral-catholic-christianity.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "categoryDecription": "I denne kategori, kommer du til at gå på opdagelse i Aalborgs smukke gader. Her kommer du til at opleve nogle af de flotte kirker som Aalborg byder på",
+        "categoryTasks": [
+            {
+                "taskName": "Budolfi Kirke",
+                "taskHintImg": "https://images.pexels.com/photos/1343325/pexels-photo-1343325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "taskHint": [
+                    "Kirken blev opført i 1000-tallet", 
+                    "Kirken var oprindeligt bygget i træ", 
+                    "Kirken blev renoveret i 1941-43, hvor alt træ blev erstattet med mursten"
+                ],
+                "taskPlacement": {
+                    "lat": 57.047897,
+                    "lon": 9.919438
+                }
+            },
+            {
+                "taskName": "Klosterkirken",
+                "taskHintImg": "https://images.pexels.com/photos/1343325/pexels-photo-1343325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "taskHint": [
+                    "Kirken blev opført i år 1681", 
+                    "Kirken blev renoveret i 2010", 
+                    "Kirkens kunstværk har fået navnet ”Geloia”, som betyder ”Den, der bringer smilet frem"
+                ],
+                "taskPlacement": {
+                    "lat": 57.048922,
+                    "lon": 9.918141
+                }
+            },
+            {
+                "taskName": "Vor Frue Kirke",
+                "taskHintImg": "https://images.pexels.com/photos/1343325/pexels-photo-1343325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "taskHint": [
+                    "Kirken blev opført i 1100-tallet", 
+                    "Kirken blev indviet i år 1887", 
+                    "Kirken hed tidligere Maria kirken"
+                ],
+                "taskPlacement": {
+                    "lat": 57.046363830566406,
+                    "lon": 9.924022674560547
+                }
+            },
+            {
+                "taskName": "Sct. Mariæ Kirke",
+                "taskHintImg": "https://images.pexels.com/photos/1343325/pexels-photo-1343325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "taskHint": [
+                    "Kirken blev opført i år 1925", 
+                    "Kirken er en romersk katolsk kirke"
+                ],
+                "taskPlacement": {
+                    "lat": 57.05184,
+                    "lon": 9.911511
+                }
+            },
+            {
+                "taskName": "Vor Frelsers Kirke",
+                "taskHintImg": "https://images.pexels.com/photos/1343325/pexels-photo-1343325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "taskHint": [
+                    "Kirken blev færdig bygget i år 1902", 
+                    "Kirkens tårn er 62.8 meter højt", 
+                    "Den samlede pris for byggeriet blev på i alt 136.700 kr."
+                ],
+                "taskPlacement": {
+                    "lat": 57.049816,
+                    "lon": 9.906286
+                }
+            }
+        ]
+    },
+
+    {
+        "categoryName": "Væg malerier i Aalborg",
+        "categoryImg": "https://images.pexels.com/photos/772650/pexels-photo-772650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "categoryDecription": "I denne kategori, kommer du til at gå på opdagelse i mange af Aalborgs smukke gader. Her kommer du til at opleve noget af det kunst som Aalborg tilbyder.",
+        "categoryTasks": [
+            {
+                "taskName": "Budolfi Kirke",
+                "taskHintImg": "https://images.pexels.com/photos/772650/pexels-photo-772650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "taskHint": [
+                    "maleri 1", 
+                    "maleri 1", 
+                    "maleri 1"
+                ],
+                "taskPlacement": {
+                    "lat": 57.047897,
+                    "lon": 9.919438
+                }
+            },
+            {
+                "taskName": "Klosterkirken",
+                "taskHintImg": "https://images.pexels.com/photos/772650/pexels-photo-772650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "taskHint": [
+                    "maleri 2", 
+                    "maleri 2", 
+                    "maleri 2"
+                ],
+                "taskPlacement": {
+                    "lat": 57.048922,
+                    "lon": 9.918141
+                }
+            },
+            {
+                "taskName": "Vor Frue Kirke",
+                "taskHintImg": "https://images.pexels.com/photos/772650/pexels-photo-772650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "taskHint": [
+                    "maleri 3", 
+                    "maleri 3", 
+                    "maleri 3"
+                ],
+                "taskPlacement": {
+                    "lat": 57.046363830566406,
+                    "lon": 9.924022674560547
+                }
+            },
+            {
+                "taskName": "Sct. Mariæ Kirke",
+                "taskHintImg": "https://images.pexels.com/photos/772650/pexels-photo-772650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "taskHint": [
+                    "maleri 4", 
+                    "maleri 4", 
+                    "maleri 4"
+                ],
+                "taskPlacement": {
+                    "lat": 57.05184,
+                    "lon": 9.911511
+                }
+            },
+            {
+                "taskName": "Vor Frelsers Kirke",
+                "taskHintImg": "https://images.pexels.com/photos/772650/pexels-photo-772650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "taskHint": [
+                    "maleri 5", 
+                    "maleri 5", 
+                    "maleri 5"
+                ],
+                "taskPlacement": {
+                    "lat": 57.049816,
+                    "lon": 9.906286
+                }
+            }
+        ]
+    }
+]

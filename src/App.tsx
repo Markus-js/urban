@@ -24,37 +24,47 @@ import Home from './pages/Home/Home';
 import Tasks from './pages/Tasks/Tasks';
 import Account from './pages/Account/Account';
 import {navigateCircleOutline, personCircleOutline, starOutline} from 'ionicons/icons';
+import { useState } from 'react';
+import Login from './pages/Login/Login';
 
-const App: React.FC = () => (
-  <IonApp>
-      <IonReactRouter>
-        <IonTabs>
-          <IonRouterOutlet>
-            <Route exact path="/tasks" component={Tasks}></Route>
-            <Route exact path="/home" component={Home}></Route>
-            <Route exact path="/account" component={Account}></Route>
-            <Route exact path="/"> <Redirect to="/home" /> </Route>
-          </IonRouterOutlet>
+const App: React.FC<any> = () => {
+  
+  const [currentTask, setCurrentTask] = useState();
+  const [logedIn, setLogedIn] = useState(false);
 
-          <IonTabBar slot="bottom">
-            <IonTabButton tab="tasks" href="/tasks">
-              <IonIcon icon={starOutline}></IonIcon>
-              <IonLabel>Tasks</IonLabel>
-            </IonTabButton>
+  return (
+    <IonApp>
+      {logedIn ?
+        <IonReactRouter>
+          <IonTabs>
+            <IonRouterOutlet>
+              <Route exact path="/tasks" render={() => { return( <Tasks setCurrentTask={setCurrentTask} /> )}}></Route>
+              <Route exact path="/home" render={() => { return( <Home currentTask={currentTask} /> )}}></Route>
+              <Route exact path="/account" component={Account}></Route>
+              <Route exact path="/"> <Redirect to="/home" /> </Route>
+            </IonRouterOutlet>
 
-            <IonTabButton tab="home" href="/home">
-              <IonIcon icon={navigateCircleOutline}></IonIcon>
-              <IonLabel>Home</IonLabel>
-            </IonTabButton>
+            <IonTabBar slot="bottom">
+              <IonTabButton tab="tasks" href="/tasks">
+                <IonIcon icon={starOutline}></IonIcon>
+                <IonLabel>Tasks</IonLabel>
+              </IonTabButton>
 
-            <IonTabButton tab="account" href="/account">
-              <IonIcon icon={personCircleOutline}></IonIcon>
-              <IonLabel>Account</IonLabel>
-            </IonTabButton>
-          </IonTabBar>
-        </IonTabs>
-      </IonReactRouter>
-  </IonApp>
-);
+              <IonTabButton tab="home" href="/home">
+                <IonIcon icon={navigateCircleOutline}></IonIcon>
+                <IonLabel>Home</IonLabel>
+              </IonTabButton>
+
+              <IonTabButton tab="account" href="/account">
+                <IonIcon icon={personCircleOutline}></IonIcon>
+                <IonLabel>Account</IonLabel>
+              </IonTabButton>
+            </IonTabBar>
+          </IonTabs>
+        </IonReactRouter>
+        : <Login setLogedIn={setLogedIn} />}
+    </IonApp>
+  )
+};
 
 export default App;

@@ -1,10 +1,15 @@
-import {IonContent, IonLabel, IonPage, IonTabBar, IonTabButton, IonTabs} from '@ionic/react';
+import {IonContent, IonHeader, IonPage, IonTabBar, IonTabButton, IonTabs, IonToolbar} from '@ionic/react';
 
 const Account: React.FC = () => {
   return (
-    <IonContent>
-      <p>account</p>
-    </IonContent>
+    <IonPage>
+      <IonHeader>
+        <IonToolbar></IonToolbar>
+      </IonHeader>
+      <IonContent>
+        <p>Account</p>
+      </IonContent>
+    </IonPage>
   );
 };
 
