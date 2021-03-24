@@ -1,6 +1,7 @@
 import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from "@ionic/react";
 import { useEffect } from "react";
 import JsonData from '../../JsonFiles/JsonFiles.json';
+import './Tasks.css';
 
 
 
@@ -13,18 +14,18 @@ const Tasks: React.FC<any> = (props) => {
             <IonHeader>
                 <IonToolbar></IonToolbar>
             </IonHeader>
-            <IonContent scrollEvents={true}>
+            <IonContent className="contentContainer" scrollEvents={true}>
 
                 {loadData && loadData.map((item, index) => {
                     return (
-                        <IonCard key={index}>
+                        <IonCard key={index} className="card">
                             <img src={item.categoryImg} alt={item.categoryName}/>
                             <IonCardHeader>
-                                <IonCardTitle>{item.categoryName}</IonCardTitle>
+                                <IonCardTitle className="cardTitle">{item.categoryName}</IonCardTitle>
                             </IonCardHeader>
                             <IonCardContent>
-                            <p>{item.categoryDecription}</p>
-                            <IonButton expand="full" fill="solid" color="medium" onClick={() => setCurrentTask(item.categoryTasks[Math.floor(Math.random() * Math.floor(item.categoryTasks.length))])}>Start eventyret</IonButton>
+                                <p className="cardDecription">{item.categoryDecription}</p>
+                                <IonButton className="cardButton" expand="full" fill="solid" onClick={() => setCurrentTask(item.categoryTasks[Math.floor(Math.random() * Math.floor(item.categoryTasks.length))])}>Start eventyret</IonButton>
                             </IonCardContent>
                         </IonCard>
                     )
