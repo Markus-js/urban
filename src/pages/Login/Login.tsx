@@ -7,6 +7,7 @@ import { auth } from '../../Helpers/Firebase';
 const Login: React.FC<any> = (props) => {
     
     const setLogedIn = props.setLogedIn;
+    const setUser = props.setUser;
 
     const emailInput = useRef<HTMLIonInputElement>(null);
     const passwordInput = useRef<HTMLIonInputElement>(null);
