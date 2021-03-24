@@ -31,6 +31,7 @@ const App: React.FC<any> = () => {
   //
   const [currentTask, setCurrentTask] = useState();
   const [logedIn, setLogedIn] = useState(false);
+  const [user, setUser] = useState({});
 
   return (
     <IonApp>
@@ -62,7 +63,7 @@ const App: React.FC<any> = () => {
             </IonTabBar>
           </IonTabs>
         </IonReactRouter>
-        : <Login setLogedIn={setLogedIn} />}
+        : <Login setLogedIn={setLogedIn} setUser={setUser} />}
     </IonApp>
   )
 };
