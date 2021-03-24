@@ -8,7 +8,6 @@ const Login: React.FC<any> = (props) => {
     
     const setLogedIn = props.setLogedIn;
 
-    //kan ikke få den til at gemme hvad man skriver i indput felterne...
     const emailInput = useRef<HTMLIonInputElement>(null);
     const passwordInput = useRef<HTMLIonInputElement>(null);
 
