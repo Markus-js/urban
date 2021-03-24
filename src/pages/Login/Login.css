@@ -1,12 +1,12 @@
 .loginContent {
     --background: rgb(255,245,103) !important;
     --background: linear-gradient(45deg, rgba(255,245,103,1) 0%, rgba(255,103,96,1) 100%) !important; 
-    --padding-top: 60% !important;
+    --padding-top: 70% !important;
 }
 .signupContent {
     --background: rgb(255,245,103) !important;
     --background: linear-gradient(45deg, rgba(255,245,103,1) 0%, rgba(255,103,96,1) 100%) !important;
-    --padding-top: 60% !important; 
+    --padding-top: 70% !important; 
 }
 
 .inputField {
