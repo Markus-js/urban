@@ -1,0 +1,17 @@
+.modalContent {
+    --background: rgb(255,245,103) !important;
+    --background: linear-gradient(45deg, rgba(255,245,103,1) 0%, rgba(255,103,96,1) 100%) !important;
+}
+
+.card {
+    --background: #00000070 !important;
+    --color: white !important;
+}
+
+.cardList {
+    background: transparent !important;
+}
+
+.cardListItem {
+    --background: transparent !important;
+}
